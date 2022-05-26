@@ -1,22 +1,15 @@
-import { useState } from 'react';
+import Navbar from './Navbar';
+import Home from './Home';
 
-const Home = () => {
-  const [blogs, setBlogs] = useState([
-    { title: 'My new website', body: 'Working on the....', authore: 'Harry', id: 1},
-    { title: 'Welcome party', body: 'Working on the....', authore: 'Louis', id: 2 },
-    { title: 'Summer internship', body: 'Working on the....', authore: 'Niall', id: 3 },
-  ]);
+function App() {
   return (
-    <div className='home'>
-      {blogs.map((blog) => (
-        <div className='blog-preview' key={blog.id}>
-          <h2>{blog.title}</h2>
-          <p>Written by {blog.authore}</p>
-        </div>
-      ))}
-      
+    <div className="App">
+      <Navbar />
+      <div className= "content">
+        <Home />
+    </div>
     </div>
   );
 }
 
-export default Home;
+export default App;
