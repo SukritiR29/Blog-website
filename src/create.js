@@ -1,5 +1,3 @@
-
-   
 import { useState } from "react";
 
 const Create = () => {
@@ -37,3 +35,5 @@ const Create = () => {
     </div>
   );
 }
+ 
+export default Create;
